@@ -1,0 +1,9 @@
+{
+  "From": "+919999999999",
+  "To": "+918888888888",
+  "CallerId": "08012345678",
+  "Record": true,
+  "StatusCallback": "https://callback.test.com",
+  "StatusCallbackContentType": "application/json",
+  "StatusCallbackEvents": ["terminal", "answered"]
+}

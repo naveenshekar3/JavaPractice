@@ -1,0 +1,21 @@
+{
+  "customerId": "CUST12345",
+  "name": {
+    "firstName": "Ravi",
+    "lastName": "Kumar"
+  },
+  "contact": {
+    "email": "ravi.kumar@example.com",
+    "phone": "+91-9876543210",
+    "names": ["naveen","chandana"]
+  },
+  "address": {
+    "addressLine1": "Flat 302, Green Residency",
+    "addressLine2": "BTM Layout",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "zipCode": "560076",
+    "country": "India"
+  },
+  "status": "Active"
+}

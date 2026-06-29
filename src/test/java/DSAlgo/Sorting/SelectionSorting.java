@@ -1,0 +1,22 @@
+package DSAlgo.Sorting;
+
+import java.util.Arrays;
+
+// This first selects the min value in the list first and place it to the left
+public class SelectionSorting {
+    public static void main(String[] args) {
+        int[] arr= {4,1,2,7,9,3};
+        int temp;
+
+        for (int i=0; i<arr.length-1; i++){
+            for (int j=i; j<arr.length; j++){
+                if (arr[j]<arr[i]){
+                    temp = arr[j];
+                    arr[j] = arr[i];
+                    arr[i] = temp;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(arr));
+    }
+}
