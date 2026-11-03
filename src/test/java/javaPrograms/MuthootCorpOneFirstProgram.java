@@ -22,7 +22,7 @@ public class MuthootCorpOneFirstProgram {
     }
 
     public static void main(String[] args) {
-        String s = "abdxxxdd";
+        String s = "abdxxxdd"; // output:- ab
         int k=3;
         System.out.println(removeK(s,k));
     }
