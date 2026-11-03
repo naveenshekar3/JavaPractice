@@ -20,7 +20,7 @@ public class GetIndexOfSumOfTwoNumbersEqualToTarget {
     }
 
     public static void main(String[] args) {
-        int[] arr = {8,3,4,1,6,5}; //output = [1, 2]
+        int[] arr = {8,3,4,1,6,5};
         int target = 14; //output =[0, 4]
         System.out.println(Arrays.toString(getIndex(arr,target)));
     }

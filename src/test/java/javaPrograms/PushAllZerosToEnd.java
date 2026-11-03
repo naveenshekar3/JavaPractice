@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class PushAllZerosToEnd {
     public static void main(String[] args) {
-        int[] arr = {1,0,2,0,8,3,4,6,0};
+        int[] arr = {1,0,2,0,8,3,4,6,0}; // output:- [1, 2, 8, 3, 4, 6, 0, 0, 0]
         int index = 0;
 
         for (int i=0; i<=arr.length-1; i++){

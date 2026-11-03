@@ -22,6 +22,7 @@ public class ExotelSecondProgram {
         List<Map.Entry<Integer,Character>> list = new ArrayList<>(map.entrySet());
 
         list.sort(Map.Entry.comparingByValue());
+//        list.sort(Map.Entry.comparingByValue(Comparator.reverseOrder())); // this is to get the values sorted in reverse order
 
         for (Map.Entry<Integer,Character> entry : list){
             output.put(entry.getKey(), entry.getValue());
@@ -30,7 +31,7 @@ public class ExotelSecondProgram {
 
 
         // to Get top k number of repeated numbers
-        List<Integer> listOfNumbers = new ArrayList<>(Arrays.asList(1,1,1,2,2,3));
+        List<Integer> listOfNumbers = new ArrayList<>(Arrays.asList(1,1,1,2,2,3)); // output:- 1,2
         LinkedHashMap<Integer, Integer> mapOfNumbers = new LinkedHashMap<>();
         for (int i: listOfNumbers){
             if (mapOfNumbers.containsKey(i))

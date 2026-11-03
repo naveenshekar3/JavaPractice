@@ -2,7 +2,7 @@ package javaPrograms;
 
 public class LongestSubStringWithoutRepeating {
     public static void main(String[] args) {
-        String s = "pwwkew";
+        String s = "pwwkew"; // output:- wke
         String longestSubString = "";
 
         for (int i=0; i<=s.length()-1; i++){

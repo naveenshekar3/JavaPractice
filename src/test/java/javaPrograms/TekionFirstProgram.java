@@ -1,35 +1,33 @@
 package javaPrograms;
 
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 public class TekionFirstProgram {
 
     public static void main(String[] args) {
         String input2 = "i am raj";
-//        String input2 = "iam raj kumar";
-        ArrayList<Integer> list = new ArrayList<>();
+        Set<Integer> set = new LinkedHashSet<>();
 
         for (int i=0; i<=input2.length()-1; i++){
-            if (input2.charAt(i) == ' '){
-                list.add(i);
+            if (input2.charAt(i)==' '){
+                set.add(i);
             }
         }
-        System.out.println(list);
+
         StringBuilder sb = new StringBuilder(input2.replaceAll(" ",""));
-        StringBuilder output = new StringBuilder();
-        sb.reverse().toString();
-        String revInput = sb.toString();
-        System.out.println(sb);
-        int index=0;
-        for (int i=0; i<=input2.length()-1; i++){  //ram ukj armai
-            if (list.contains(i)){
-                output.append(" ");
-            }
-            else {
-                output.append(revInput.charAt(index));
-                index++;
+        String rev = sb.reverse().toString();
+        int index = 0;
+        StringBuilder result = new StringBuilder();
+
+        for (int i=0; i<=input2.length()-1; i++){
+            if (set.contains(i)){
+                result.append(" ");
+            }else {
+                result.append(rev.charAt(index++));
             }
         }
-        System.out.println(output);
+        System.out.println(result);
     }
 }

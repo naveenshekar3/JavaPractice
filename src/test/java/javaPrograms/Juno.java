@@ -20,7 +20,7 @@ public class Juno {
         Iterator<Map.Entry<Character,Integer>> entry = map.entrySet().iterator();
         while (entry.hasNext()){
             Map.Entry<Character,Integer> element = entry.next();
-            if (element.getValue()>=1)
+            if (element.getValue()>1)
                 System.out.print(element.getKey());
         }
     }
